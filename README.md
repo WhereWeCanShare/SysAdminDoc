@@ -1,1 +1,1 @@
-Read in Wiki
+Document is in [Wiki](/wiki)
