@@ -8,6 +8,8 @@ Initially, would like to have all my Linux system admin written here but checkin
 
 - [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. [Search for one](https://duckduckgo.com/?q=linux+nc+ncat) that is replacement.
 
+- [dbbak.sh](scripts/dbbak.sh) script to do the Postgresql DBs dump and compress.
+
 ## disclaimer
 
 Use it on your own risk. All bash scripts run well on my Debian/Rasbain 10 buster.
