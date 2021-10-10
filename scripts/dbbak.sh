@@ -17,7 +17,7 @@ then
     LINEMSG="$0 on $HOSTNAME"
 else
     LOGTIME=$(date '+%Y-%m-%d_%H:%M:%S')
-    LINETOKEN="wtkYutO4m84KEm0tROlSaDm8vKBFoYFI98AeVoaKIp0"
+    LINETOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     LINEMSG="$0 - $LOGTIME - $CONFLE not found."
     curl -X POST -H "Authorization: Bearer $LINETOKEN" -F "message=$LINEMSG" https://notify-api.line.me/api/notify
     echo -e "\n"
