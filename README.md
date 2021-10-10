@@ -2,13 +2,11 @@
 
 System Document is in [Wiki](https://github.com/WhereWeCanShare/SysAdminDoc/wiki)
 
-Initially, would like to have all my Linux system admin written here but checking on some of my [bash script gist](https://gist.github.com/wannadrunk) and found some outdated. Better push the updated ones here as well. It will slowly push a bash script as it requires to revise first for more generic use or less edit.
-
-[TOC]
+Initially, would like to have all my Linux system admin written here but checking on some of my [bash script gist](https://gist.github.com/wannadrunk) and found some outdated. Better push the updated ones here as well. It will slowly push as it requires to revise first for more generic use or less edit.
 
 ## scripts
 
-- [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. [Search for one](https://duckduckgo.com/?q=linux+nc+ncat) that is replacement.
+- [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. [Search for one](https://duckduckgo.com/?q=linux+nc+ncat) for its replacement.
 
 - [dbbak.sh](scripts/dbbak.sh) script to do the Postgresql DBs dump and compress.
 
@@ -16,7 +14,7 @@ Initially, would like to have all my Linux system admin written here but checkin
 
 ### sample use
 
-normally, those script will be put in cron job. Learn on how to schedule at https://crontab.guru
+normally, those scripts will be put in cron job. Learn on how to schedule at https://crontab.guru
 
 `$ crontab -e`
 
