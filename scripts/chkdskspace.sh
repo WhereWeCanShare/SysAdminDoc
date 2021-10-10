@@ -22,12 +22,15 @@ else
     exit
 fi
 
-if [ -f $HOME/logs/diskspace.log ]
+# define variables
+LOGDIR="$HOME/logs"
+LOGFILE="$LOGDIR/diskspace.log"
+LOGTIME=$(date '+%Y-%m-%d_%H:%M:%S')
+
+if [ ! -d $LOGDIR ]
 then
-    LOGFILE="$HOME/logs/diskspace.log"
-    LOGTIME=$(date '+%Y-%m-%d_%H:%M:%S')
-else
-    mkdir $HOME/logs/
+    mkdir "$LOGDIR"
+    touch "$LOGFILE"
 fi
 
 echo "-- $LOGTIME - Disk space statistic on $HOSTNAME" >> $LOGFILE 2>&1

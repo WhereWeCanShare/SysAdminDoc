@@ -71,8 +71,14 @@ function dump_compress() {
 }
 
 # define the variables
-BAKDIR="/home/pi/bak"
+BAKDIR="$HOME/bak"
 BAKLOG="$BAKDIR/bkup_db.log"
+
+if [ ! -d $BAKDIR ]
+then
+    mkdir "$BAKDIR"
+    touch "$BAKLOG"
+fi
 
 # Start the backup
 BAKTIME=$(date '+%Y%m%d_%H%M')
