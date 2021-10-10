@@ -6,7 +6,7 @@ Initially, would like to have all my Linux system admin writing here but checkin
 
 ## scripts
 
-- [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. Search for one that is replacement.
+- [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. [Search for one](https://duckduckgo.com/?q=linux+nc+ncat) that is replacement.
 
 ## disclaimer
 
