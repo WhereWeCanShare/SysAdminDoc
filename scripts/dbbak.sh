@@ -24,6 +24,16 @@ else
     exit
 fi
 
+# define the variables
+BAKDIR="$HOME/bak"
+BAKLOG="$BAKDIR/bkup_db.log"
+
+if [ ! -d $BAKDIR ]
+then
+    mkdir "$BAKDIR"
+    touch "$BAKLOG"
+fi
+
 
 # Function
 function dump_compress() {
@@ -70,15 +80,6 @@ function dump_compress() {
     fi
 }
 
-# define the variables
-BAKDIR="$HOME/bak"
-BAKLOG="$BAKDIR/bkup_db.log"
-
-if [ ! -d $BAKDIR ]
-then
-    mkdir "$BAKDIR"
-    touch "$BAKLOG"
-fi
 
 # Start the backup
 BAKTIME=$(date '+%Y%m%d_%H%M')
