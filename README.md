@@ -10,6 +10,8 @@ Initially, would like to have all my Linux system admin written here but checkin
 
 - [dbbak.sh](scripts/dbbak.sh) script to do the Postgresql DBs dump and compress.
 
+- [chkdskspace.sh](scripts/chkdskspace.sh) provide the disk space info.
+
 ## disclaimer
 
 Use it on your own risk. All bash scripts run well on my Debian/Rasbain 10 buster.
