@@ -6,6 +6,8 @@ Initially, would like to have all my Linux system admin written here but checkin
 
 ## scripts
 
+suggest to have these scripts in `/opt/scripts`. Have to edit some variables to suitable your environment e.g. `BAKDIR`, `LOGDIR`, and etc. Those variables normally define at the top of script.
+
 - [chkport.sh](scripts/chkport.sh) for checking the service network port, it requires `nc` which may not be available on some Linux distro. [Search for one](https://duckduckgo.com/?q=linux+nc+ncat) for its replacement.
 
 - [dbbak.sh](scripts/dbbak.sh) script to do the Postgresql DBs dump and compress.
