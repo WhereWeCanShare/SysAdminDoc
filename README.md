@@ -14,9 +14,15 @@ suggest to have these scripts in `/opt/scripts`. Have to edit some variables to 
 
 - [chkdskspace.sh](scripts/chkdskspace.sh) provide the disk space info.
 
+## extras
+
+contain the extra scripts which require other external services and do a very specific job.
+
+- [updipv6.sh](extras/updipv6.sh) to update the IPv6 to dynv6.com to maintain the accessibility via domain name.
+
 ### sample use
 
-normally, those scripts will be put in cron job. Learn on how to schedule at https://crontab.guru
+normally, those scripts will be put in cron job. Learn how to schedule a job at https://crontab.guru
 
 `$ crontab -e`
 
@@ -26,6 +32,9 @@ normally, those scripts will be put in cron job. Learn on how to schedule at htt
 */2	*	*	*	*	/opt/scripts/chkport.sh 192.168.1.200 443 HTTPS
 */2	*	*	*	*	/opt/scripts/chkport.sh 192.168.1.200 22 SSH
 */2	*	*	*	*	/opt/scripts/chkport.sh 192.168.1.201 5432 Postgresql
+
+# update the IPv6 DDNS
+*/5 *   *   *   *   /opt/scripts/extras/updipv6.sh
 ```
 
 For postgresql db backup, have to run under postgres account
